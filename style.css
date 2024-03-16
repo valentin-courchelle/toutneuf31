@@ -25,6 +25,7 @@ header{
     flex-direction: column;
     background: #EEE7CD;
     align-content: center;
+    box-shadow:  0 6px 10px 0px rgba(0,0,0,0.2);
 }
 
 .top-header{
@@ -47,7 +48,13 @@ header{
 }
 
 .top-coordinates span{
-    margin: 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+}
+
+.top-coordinates span img{
+    margin: 0px 5px;
 }
 
 .top-coordinates a{
@@ -358,7 +365,7 @@ nav {
     content: '';
     margin: 0 auto;
     height: 3px;
-    background: #493F18
+    background: #C3CF6E
 }
 
 .service-grid{
@@ -375,21 +382,30 @@ nav {
 .service-grid-item{
     display: flex;
     flex-direction: column;
-    background-color: #EEE7CD;
+    background-color: rgb(225, 225, 225);
     transition: 0s ease 0s;
 }
 
 .service-grid-item:hover{
-    background-color: darkgray;
+    background-color: #C3CF6E;
+    color: white;
 }
 
-.service-grid-item:hover .arrow-box{
-    background-color: #547E2A;
-}
 
-.service-grid-item img{
+
+.service-img-box{
     width: 300px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3CF6E;
+}
+
+
+.service-img-box img{
+    width: 200px;
+    height: 133px;
 }
 
 .item-title-box{
@@ -401,15 +417,20 @@ nav {
 .arrow-box{
     width: 30px;
     height: 30px;
-    border: solid grey;
+    border: solid black;
     border-radius: 100%;
     text-align: center;
 }
 
+.service-grid-item:hover .arrow-box{
+    background-color: #C3CF6E;
+    border-color: white;
+}
+
 .services-summury-box .btn-box{
     width: auto;
-    background-color: rgb(255, 216, 13);
-    border-color: rgb(255, 216, 13);
+    background-color: #C3CF6E;
+    border-color: #C3CF6E;
     padding-left: 30px;
     padding-right: 30px;
     transition: 0s ease 0s;
@@ -420,7 +441,7 @@ nav {
 }
 
 .services-summury-box .btn-box:hover a{
-    color: rgb(255, 216, 13);
+    color: #C3CF6E;
 }
 
 /*--------- FOOTER ---------*/
