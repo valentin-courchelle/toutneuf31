@@ -25,7 +25,6 @@ header{
     flex-direction: column;
     background: #EEE7CD;
     align-content: center;
-    box-shadow:  0 6px 10px 0px rgba(0,0,0,0.2);
 }
 
 .top-header{
@@ -153,6 +152,27 @@ nav {
 
 /*--------- MAIN IMAGE ---------*/
 
+@keyframes slideTopToBottom {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
 .main-image-box{
     height: calc(100vh - 200px);
     width: auto;
@@ -164,22 +184,26 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: 0.8s ease-in-out 0s 1 slideTopToBottom;
 }
 
 .main-image-box h2{
     font-size: 30px;
     color: white;
+    animation: 2s ease-in-out 0s 1 fadein;
 }
 
 .main-image-box h1{
     font-size: 50px;
     color: white;
     margin: 10px 0px 40px 0px;
+    animation: 2s ease-in-out 0.1s 1 fadein;
 }
 
 .main-image-box h3{
     font-size: 20px;
     color: white;
+    animation: 2s ease-in-out 0.2s 1 fadein;
 }
 
 .main-image-btn-layer{
