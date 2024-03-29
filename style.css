@@ -81,7 +81,6 @@ header{
 
 .main-header{
     width: 1300px;
-    padding: 0px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -152,6 +151,42 @@ nav {
 }
 .item-nav a:hover::after {
     width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .top-header{
+        width: 100%;
+    }
+    .main-header{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .menu-box{
+        display: flex;
+        justify-content: right;
+    }
+    .logo-menu {
+        display: block;
+    }
+    .liste-nav {
+        display: none;
+        flex-direction: column;
+        height: auto;
+    }
+    .liste-nav.active {
+        display: block;
+    }
+    .item-nav {
+        height: 70px;
+    }
+    .item-nav:nth-child(1){
+        margin-top: 70px;
+    }
+
 }
 
 /*--------- MAIN IMAGE ---------*/
@@ -267,9 +302,11 @@ nav {
 }
 
 .two-column{
-    width: 1200px;
+    width: 1300px;
     display: flex;
     margin: 20px 0px;
+    align-items: center;
+    padding: 0px 50px;
 }
 
 .text-content{
@@ -290,7 +327,8 @@ nav {
 .contact-card{
     margin-left: 20px;
     border: solid ;
-    background-color: rgb(255, 216, 13);
+    background-color: rgb(84,112,82);
+    height: 470px;
 }
 
 .selfie-box{
@@ -299,6 +337,13 @@ nav {
     background-image: url(resources/selfie.jpg);
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .two-column{
+        width: 100%;
+    }
 }
 
 /*--------- SERVICES ---------*/
@@ -349,12 +394,12 @@ nav {
     content: '';
     margin: 0 auto;
     height: 3px;
-    background: rgb(255, 216, 13);
+    background: rgb(84,112,82);
 }
 
 .paralax .btn-box{
-    border-color: rgb(255, 216, 13);
-    background-color: rgb(255, 216, 13);
+    border-color: rgb(84,112,82);
+    background-color: rgb(84,112,82);
 }
 
 .paralax .btn-box:hover{
@@ -393,7 +438,7 @@ nav {
     content: '';
     margin: 0 auto;
     height: 3px;
-    background: #C3CF6E
+    background: rgb(137,155,137)
 }
 
 .service-grid{
@@ -415,7 +460,7 @@ nav {
 }
 
 .service-grid-item:hover{
-    background-color: #C3CF6E;
+    background-color: rgb(137,155,137);
     color: white;
 }
 
@@ -427,7 +472,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C3CF6E;
+    background-color: rgb(137,155,137);
 }
 
 
@@ -451,14 +496,14 @@ nav {
 }
 
 .service-grid-item:hover .arrow-box{
-    background-color: #C3CF6E;
+    background-color: rgb(137,155,137);
     border-color: white;
 }
 
 .services-summury-box .btn-box{
     width: auto;
-    background-color: #C3CF6E;
-    border-color: #C3CF6E;
+    background-color: rgb(137,155,137);
+    border-color: rgb(137,155,137);
     padding-left: 30px;
     padding-right: 30px;
     transition: 0s ease 0s;
@@ -469,7 +514,14 @@ nav {
 }
 
 .services-summury-box .btn-box:hover a{
-    color: #C3CF6E;
+    color: rgb(137,155,137);
+}
+
+@media screen and (max-width: 1300px) {
+
+    .paralax-content-box{
+        width: 100%;
+    }
 }
 
 /*--------- FOOTER ---------*/
@@ -570,4 +622,11 @@ footer h2::after {
     color: #e7711b !important;
     font-size: 20px !important;
     margin: 0 6px 0 0 !important;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer-bottom{
+        width: 100%;
+    }
+
 }
