@@ -315,9 +315,21 @@ nav {
 }
 
 .text-content h2{
-    margin: 10px 0px;
-    padding-bottom: 18px;
+    position: relative;
+    margin: 20px 0px;
+    padding-bottom: 10px;
     font-size: xx-large;
+}
+
+.text-content h2::after{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 120px;
+    content: '';
+    margin: 0 auto;
+    height: 3px;
+    background: rgb(84, 112, 82);
 }
 
 .text-content p{
@@ -373,13 +385,9 @@ nav {
 }
 
 .paralax-text-content h2{
-    font-size: 35px;
-    line-height: 1.0em;
-}
-
-.paralax-text-content h2{
     position: relative;
     font-size: 35px;
+    line-height: 1.0em;
     font-weight: 700;
     letter-spacing: 1px;
     padding-bottom: 10px;
