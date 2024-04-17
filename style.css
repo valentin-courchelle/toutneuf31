@@ -334,16 +334,23 @@ nav {
 
 .text-content p{
     margin-bottom: 16px;
+    font-size: 22px;
 }
 
-.contact-card{
+.portrait-card{
     margin-left: 20px;
     border: solid ;
     background-color: rgb(84,112,82);
-    height: 470px;
+    height: auto;
+    color: #F1F1F1;
 }
 
-.selfie-box{
+.portrait-card h3{
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.portrait-box{
     height: 400px;
     width: 300px;
     background-image: url(resources/selfie.jpg);

@@ -1,0 +1,69 @@
+section{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.service-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section h2{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin: 40px 0px;
+}
+
+h2::after {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 0px;
+    width: 80px;
+    content: '';
+    margin: 0 auto;
+    height: 3px;
+    background: rgb(137,155,137)
+}
+
+.service-img{
+    background-color: rgb(137,155,137);
+    width: 400px;
+    height: 400px;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-img img{
+    width: 360px;
+    height: 240px;
+}
+
+.sercice-description{
+    width: 600px;
+    text-align: justify;
+
+}
+
+.service-prestation-box{
+    background-color: #1C544E;
+    color: #F1F1F1;
+    padding: 20px 40px;
+    margin: 20px 0px;
+    height: 150px;
+}
+
+.service-prestation-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3{
+    text-decoration: underline;
+}

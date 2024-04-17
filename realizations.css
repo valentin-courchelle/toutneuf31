@@ -31,11 +31,12 @@
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(8, 300px);
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     justify-content: center;
     margin: 20px 0px;
 }
+
 
 .gallery-item1{
     grid-row: 1 / 2;
