@@ -471,6 +471,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: rgb(225, 225, 225);
+    color: black;
     transition: 0s ease 0s;
 }
 
